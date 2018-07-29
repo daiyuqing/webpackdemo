@@ -1,0 +1,179 @@
+@import 'reset.css';
+@import 'iconfont.css';
+@media screen and (max-width: 2000px) and (min-width: 1501px){
+	html{font-size: 20px;}
+}
+@media screen and  (max-width: 1500px) and (min-width: 1001px){
+	html{font-size: 16px;}
+}
+@media screen and  (max-width: 1000px) and (min-width: 801px){
+	html{font-size: 14px;}
+}
+@media screen and  (max-width: 800px) and (min-width: 601px){
+	html{font-size: 12px;}
+}
+@media screen and  (max-width: 600px){
+	html{font-size: 10px;}
+}
+@mixin  flex{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+body{
+	background: url(http://ae01.alicdn.com/kf/HTB1ouqXzhuTBuNkHFNR7639qpXaR.png);
+}
+/*导航*/
+.nav{
+	position: fixed;
+	left: 0;
+	top:40%;
+	background: #404040;
+	li{
+		width: 2rem;
+		height:2rem;
+		a{
+			width: 2rem;
+			height:2rem;
+			@include flex;
+		}
+		i{
+			font-size: 1rem;
+			color: #fff;
+		}
+	}
+}
+/*主页*/
+.home{
+	@include flex;
+	flex-direction: column;
+	width: 100%;
+	margin-top: 8rem;
+	img{
+		width: 8rem;
+		height: 8rem;
+		border-radius: 4rem;
+	}
+	h1{
+		font-size: 1.6rem;
+		line-height: 2rem;
+	}
+	h2,p{
+		font-size: 1.2rem;
+		line-height: 2rem;
+	}
+	.home_bottom i{
+		font-size: 3rem;
+		margin-left: 0.5rem;
+	}
+}
+/*技能*/
+.skill{
+	h1{
+		text-align: center;
+		font-size: 2.5rem;
+		font-weight: bold;
+	}
+	.skill_content{
+		width: 50rem;
+		margin: 0 auto;
+		@include flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+	.skill_item{
+		width: 20rem;
+		height: 8rem;
+		margin-left: 5rem;
+		@include flex;
+		flex-direction: row;
+		div{
+			margin-left: 1rem;
+			width: 15rem;
+			h3{
+				font-size: 1.2rem;
+				line-height: 1.6rem;
+			}
+			p{
+				font-size: 0.8rem;
+				line-height: 1rem;
+			}
+		}
+	}
+	i{
+		font-size: 4rem;
+		color: #0a992c;
+	}
+}
+/*项目*/
+.project{
+	width: 60rem;
+	margin:0 auto;
+	h1{
+		font-size: 2rem;
+		text-align: center;
+	}
+	.project_content{
+		border-left: 0.1rem solid #0a992c;
+		.project_item{
+			width: 55rem;
+			margin: 2rem auto;
+			position: relative;
+			&:hover { box-shadow: 0 0 10px #ccc; }
+			.project_title{
+				padding-left: 1rem;
+				font-size: 1.2rem;
+				height: 3rem;
+				line-height: 3rem;
+				color: #108ee9;
+				font-weight: bold;
+				border-bottom: 0.01rem solid #ccc;
+			}
+			.project_time{
+				margin-top: 1rem;
+				font-size:1rem;
+				line-height: 1.2rem;
+			}
+			.project_time,.project_text{
+				padding-left: 1rem;
+				font-size: 1rem;
+				line-height: 1.2rem;
+			}
+			.project_pic{
+				@include flex;
+				flex-direction: row;
+				margin:1rem;
+				img{
+					max-width: 9rem;
+					max-height: 10rem;
+					cursor: pointer;
+				}
+			}
+			.project_dot{
+				width: 1rem;
+				height: 1rem;
+				border-radius: 1rem;
+				background:#0a992c;
+				position: absolute;
+				left: -3rem;
+				top: 0rem;
+			}
+		}
+	}
+}
+.dialog{
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	left: 0;
+	top: 0;
+	background: #000;
+	opacity: 0.9;
+	@include flex;
+	img{
+		max-width: 40rem;
+		max-height: 30rem;
+		cursor: pointer;
+	}
+}

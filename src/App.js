@@ -1,21 +1,13 @@
 import React from 'react';
-import './index.css';
-
+import 'static/css/index.scss';
+import Routes from './routes/index.js';
 class App extends React.Component{
 	constructor(){
 		super();
 	}
-	componentWillMount(){
-		fetch('/kugou/singer/class&json=true').then( (res) => res.json()).then(
-            (result)=>{
-                console.log(result);
-            },(error)=>{
-                console.log(error);
-            }
-        );
-	}
+
 	render(){
-		return <div>hello world!</div>
+		return <div><Routes/></div>
 	}
 }
 
