@@ -7,6 +7,10 @@
     "build": "./node_modules/.bin/webpack  --config webpack.prod.config.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/daiyuqing/react-resume"
+  },
   "author": "",
   "license": "ISC",
   "devDependencies": {
