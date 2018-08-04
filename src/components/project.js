@@ -38,7 +38,7 @@ class Project extends React.Component{
 		let dialog=null;
 		if (this.state.showDialog) {
 			dialog=(<div className="dialog" onClick={this.hidePic.bind(this)}>
-				<img src={'//q.aiyongbao.com/item/web/images/pricewatermark/'+this.state.dialogPic+'.png'}/>
+				<img src={'https://q.aiyongbao.com/item/web/images/pricewatermark/'+this.state.dialogPic+'.png'}/>
 			</div>);
 		}
 		return <div className='project'>
@@ -52,7 +52,7 @@ class Project extends React.Component{
 						<p  className='project_text'>{item.text}</p>
 						<div className="project_pic" style={{display:'flex'}}>
 							{item.pic_urls.map((value,key)=>{
-								return <img src={'//q.aiyongbao.com/item/web/images/pricewatermark/'+value+'.png'} key={key} onClick={this.showPic.bind(this,value)} className='project_pic'/>
+								return <img src={'https://q.aiyongbao.com/item/web/images/pricewatermark/'+value+'.png'} key={key} onClick={this.showPic.bind(this,value)} className='project_pic'/>
 							})}
 						</div>
 						<div className="project_dot"></div>
