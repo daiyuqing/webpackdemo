@@ -14,6 +14,24 @@ const projects=[
 		text:'爱用商品是一个电商后台管理项目，为了淘宝卖家管理自己店铺的商品而设计。这是它的PC部分，使用了react+react-router+redux开发。',
 		pic_urls:['pc01','pc02','pc03','pc04','pc05'],
 	},
+	{
+		title:'爱用交易移动端',
+		time:'2017.5-2018.08',
+		text:'爱用商品是一个电商后台管理项目，为了淘宝卖家管理自己店铺的订单而设计。这是它的移动Hybrid App(混合模式移动应用)部分，使用了weex容器+react框架开发。',
+		pic_urls:['mobile08','mobile09','mobile10','mobile11','mobile12','mobile13','mobile14'],
+	},
+	{
+		title:'爱用交易PC端',
+		time:'2017.5-2018.08',
+		text:'爱用商品是一个电商后台管理项目，为了淘宝卖家管理自己店铺的订单而设计。这是它的PC部分，使用了react+react-router+redux开发。',
+		pic_urls:['pc06','pc07','pc08','pc09','pc10'],
+	},
+	{
+		title:'react-music',
+		time:'2018.5-2018.07',
+		text:'react-music是一个音乐类的移动端webapp,后端使用的是酷狗的接口，在此感谢酷狗。技术选型使用的是react+react-router+redux。',
+		pic_urls:['mobile15','mobile16','mobile17','mobile18','mobile19','mobile20','mobile21'],
+	}
 ]
 class Project extends React.Component{
 	constructor(){
