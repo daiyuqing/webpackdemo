@@ -60,7 +60,7 @@ const config={
 		new webpack.HotModuleReplacementPlugin(),
 		new HtmlWebpackPlugin({
 			name:'index.html',
-			template:'./public/index.html'
+			template:'./public/index.html',
 		})
 	]
 
