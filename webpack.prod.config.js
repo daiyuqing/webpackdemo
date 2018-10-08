@@ -32,7 +32,7 @@ const config={
             {
                 test: /\.(png|jpg|gif)$/,
                 use:{
-                    loader: 'file-loader',
+                    loader: 'url-loader',
                     options: {
                       outputPath: 'img/',
                       name: '[name].[ext]?[hash]',
