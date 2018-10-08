@@ -31,11 +31,17 @@ const config={
 			},
             {
                 test: /\.(png|jpg|gif)$/,
-                use:'file-loader'
+                use:{
+                    loader: 'file-loader',
+                    options: {
+                      outputPath: 'img/',
+                      name: '[name].[ext]?[hash]',
+                    }
+                }
             },
             {
                 test: /\.(woff|svg|eot|ttf)\??.*$/,
-                loader: 'url-loader?limit=50000&name=[path][name].[ext]'
+                use: 'url-loader?limit=50000&name=[path][name].[ext]'
             },
 			{
 		        test: /\.css$/,
