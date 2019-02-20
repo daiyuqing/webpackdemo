@@ -6,7 +6,7 @@ const skills=[
 	{title:'JS',pic_url:'icon-javascript',text:'Javascript基础良好，熟悉JS新标准ES6的语法特性(类，箭头函数，解构赋值等)。'},
 	{title:'React',pic_url:'icon-react',text:'熟练使用React,React Router、Redux全家桶。'},
 	{title:'Git',pic_url:'icon-git',text:'熟练使用git进行代码管理及版本控制。'},
-	{title:'MySql',pic_url:'icon-mysql',text:'熟悉MySql,能根据功能需求设计数据库，熟练使用数据库查询语句。能写简单的后端php接口。'},
+	{title:'MySql',pic_url:'icon-mysql',text:'熟悉MySql,能根据功能需求设计数据库，熟练使用数据库查询语句。有PHP和nodejs开发经验。'},
 	{title:'其他框架',pic_url:'icon-qita',text:'熟悉jQuery、Vue.js等前端库和框架。'},
 	{title:'工具',pic_url:'icon-tool',text:'熟悉webpack配置,熟练使用sublime text代码编辑器'}
 ]
