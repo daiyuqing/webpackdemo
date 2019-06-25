@@ -41,7 +41,14 @@ const config={
             },
             {
                 test: /\.(woff|svg|eot|ttf)\??.*$/,
-                use: 'url-loader?limit=50000&name=[path][name].[ext]'
+                use: [
+                  {
+                    loader: 'url-loader',
+                    options: {
+                      limit: 8192,
+                    },
+                  },
+                ],
             },
 			{
 		        test: /\.css$/,
