@@ -3,11 +3,17 @@ import Nav from './nav.js';
 
 const projects=[
 	{
-		title:'VRLife',
+		title:'微信小程序《51CTO题库》',
 		time:'2018.08-2019.02',
-		text:'vrlife是一个VR游戏，用户可上传自己制作的场景和人物模型到游戏中给其他用户可以使用，使用了vue+php开发',
-		pic_urls:['vrlife01','vrlife02','vrlife03','vrlife04','vrlife05'],
+		text:'《51CTO题库》教育类微信小程序，可以供职业资格考试人员在线刷题',
+		pic_urls:['ruankao01','ruankao02','ruankao03','ruankao04','ruankao05','ruankao06','ruankao07'],
 	},
+	// {
+	// 	title:'VRLife',
+	// 	time:'2018.08-2019.02',
+	// 	text:'vrlife是一个VR游戏，用户可上传自己制作的场景和人物模型到游戏中给其他用户可以使用，使用了vue+php开发',
+	// 	pic_urls:['vrlife01','vrlife02','vrlife03','vrlife04','vrlife05'],
+	// },
 	{
 		title:'微信小游戏《标枪王者》',
 		time:'2019.01-2019.02',
@@ -78,7 +84,7 @@ class Project extends React.Component{
 				{projects.map((item,index)=>{
 					return (<div className='project_item' key={index}>
 						<h2 className='project_title'>{item.title}</h2>
-						<p  className='project_time'>{item.time}</p>
+						<p  className='project_time'></p>
 						<p  className='project_text'>{item.text}</p>
 						<div className="project_pic" style={{display:'flex'}}>
 							{item.pic_urls.map((value,key)=>{
